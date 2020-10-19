@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CoachHomeController">
+    <children>
+        <ImageView fx:id="Close" fitHeight="34.0" fitWidth="35.0" layoutX="1144.0" layoutY="10.0" onMouseClicked="#Close">
+            <image>
+                <Image url="@Assets/cancel.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="Minus" fitHeight="34.0" fitWidth="35.0" layoutX="1087.0" layoutY="10.0" onMouseClicked="#Minus">
+            <image>
+                <Image url="@Assets/minus.png" />
+            </image>
+        </ImageView>
+        <VBox layoutX="266.0" layoutY="263.0" onMouseClicked="#RankingAction" prefHeight="304.0" prefWidth="242.0" styleClass="boxs">
+            <children>
+                <ImageView fitHeight="254.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Assets/classement.jpg" />
+                    </image>
+                    <effect>
+                        <Blend />
+                    </effect>
+                </ImageView>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Classement" textAlignment="CENTER" wrappingWidth="238.66999435424805">
+                    <font>
+                        <Font size="28.0" />
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+        <VBox layoutX="720.0" layoutY="259.0" onMouseClicked="#EmploiAction" prefHeight="309.0" prefWidth="255.0" styleClass="boxs">
+            <children>
+                <ImageView fitHeight="254.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@Assets/emploi.png" />
+                    </image>
+                    <effect>
+                        <Blend />
+                    </effect>
+                </ImageView>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Emploi" textAlignment="CENTER" wrappingWidth="238.66999435424805">
+                    <font>
+                        <Font size="36.0" />
+                    </font>
+                </Text>
+            </children>
+        </VBox>
+        <Label fx:id="welcomeLabel" layoutX="67.0" layoutY="37.0" prefHeight="74.0" prefWidth="570.0" styleClass="Title" text="Coach ~ [UserName]" textFill="#777c7c">
+            <font>
+                <Font name="Century" size="48.0" />
+            </font>
+        </Label>
+        <Text fill="#0b0b0b" layoutX="159.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soyez le bienvenue dans notre application." wrappingWidth="647.1999389648438">
+            <font>
+                <Font name="Calibri Light Italic" size="36.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

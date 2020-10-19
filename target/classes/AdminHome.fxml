@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdminHomeController">
+   <children>
+      <ImageView fx:id="Close" fitHeight="34.0" fitWidth="35.0" layoutX="1144.0" layoutY="10.0" onMouseClicked="#Close">
+         <image>
+            <Image url="@Assets/cancel.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Minus" fitHeight="34.0" fitWidth="35.0" layoutX="1087.0" layoutY="10.0" onMouseClicked="#Minus">
+         <image>
+            <Image url="@Assets/minus.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="90.0" layoutY="251.0" onMouseClicked="#UsersAction" prefHeight="229.0" prefWidth="162.0" styleClass="boxs">
+         <children>
+            <ImageView fitHeight="208.0" fitWidth="214.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/users.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Users" textAlignment="CENTER" wrappingWidth="225.87003707885742">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="384.0" layoutY="252.0" onMouseClicked="#EquipementAction" prefHeight="260.0" prefWidth="185.0" styleClass="boxs">
+         <children>
+            <ImageView fitHeight="205.0" fitWidth="243.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/equipment.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Equippement" textAlignment="CENTER" wrappingWidth="214.13669967651367">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="947.0" layoutY="252.0" onMouseClicked="#TimeTableAction" prefHeight="252.0" prefWidth="205.0" styleClass="boxs">
+         <children>
+            <ImageView fitHeight="210.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/emploi.png" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Emploi" textAlignment="CENTER" wrappingWidth="206.66975021362305">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Label layoutX="57.0" layoutY="23.0" prefHeight="74.0" prefWidth="369.0" styleClass="Title" text="Administrateur" textFill="#777c7c">
+         <font>
+            <Font name="Century" size="48.0" />
+         </font>
+      </Label>
+      <VBox layoutX="684.0" layoutY="248.0" onMouseClicked="#ReclamationsAction" prefHeight="268.0" prefWidth="220.0" styleClass="boxs">
+         <children>
+            <ImageView fitHeight="217.0" fitWidth="212.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/reclamer.png" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Reclamations" textAlignment="CENTER" wrappingWidth="212.00333786010742">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ClientHomeController">
+   <children>
+      <ImageView fx:id="Close" fitHeight="34.0" fitWidth="35.0" layoutX="1144.0" layoutY="10.0" onMouseClicked="#Close">
+         <image>
+            <Image url="@Assets/cancel.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="Minus" fitHeight="34.0" fitWidth="35.0" layoutX="1087.0" layoutY="10.0" onMouseClicked="#Minus">
+         <image>
+            <Image url="@Assets/minus.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="48.0" layoutY="251.0" onMouseClicked="#ReserveAction" prefHeight="304.0" prefWidth="242.0" styleClass="boxs">
+         <children>
+            <ImageView fitHeight="240.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/users.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Réserver un Coach" textAlignment="CENTER" wrappingWidth="238.66999435424805">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="339.0" layoutY="254.0" onMouseClicked="#TimeTableAction" prefHeight="310.0" prefWidth="246.0" styleClass="boxs">
+         <children>
+            <ImageView fitHeight="240.0" fitWidth="248.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/emploi.png" />
+               </image>
+               <effect>
+                  <Blend />
+               </effect>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Emploi" textAlignment="CENTER" wrappingWidth="238.66999435424805">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <VBox layoutX="618.0" layoutY="253.0" onMouseClicked="#ReclamationAction" prefHeight="322.0" prefWidth="258.0" styleClass="boxs">
+         <children>
+            <ImageView fitHeight="240.0" fitWidth="270.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Assets/reclamer.png" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Réclamer" textAlignment="CENTER" wrappingWidth="254.6700096130371">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+      <Label fx:id="usernameLabel" layoutX="67.0" layoutY="37.0" prefHeight="74.0" prefWidth="570.0" styleClass="Title" text="Adhérent ~ [UserName]" textFill="#777c7c">
+         <font>
+            <Font name="Century" size="48.0" />
+         </font>
+      </Label>
+      <Text fill="#0b0b0b" layoutX="159.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Soyez le bienvenue dans notre application." wrappingWidth="647.1999389648438">
+         <font>
+            <Font name="Calibri Light Italic" size="36.0" />
+         </font>
+      </Text>
+      <VBox layoutX="909.0" layoutY="252.0" onMouseClicked="#RankAction" prefHeight="322.0" prefWidth="258.0" styleClass="boxs">
+         <children>
+            <ImageView fitHeight="244.0" fitWidth="248.0">
+               <image>
+                  <Image url="@Assets/coach.jpg" />
+               </image>
+            </ImageView>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Noter Entraineur" textAlignment="CENTER" wrappingWidth="254.6700096130371">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,77 @@
+#root, #root2 {
+    -fx-background-radius: 40;
+    -fx-background-color: white;
+}
+#Close, #Minus{
+    -fx-cursor: hand;
+}
+.buttons{
+    -fx-background-color: white;
+    -fx-border-radius: 5px;
+    -fx-opacity: 1;
+    -fx-display: flex;
+    -fx-justify-content: center;
+    -fx-font-size: 16;
+
+}
+#Valider, .retour{
+    -fx-background-color: #3e8edf;
+    -fx-font-family: "Cambria Math";
+    -fx-font-size: 17;
+}
+#Valider:hover,.retour:hover{
+    -fx-background-color: #4dabff;
+    -fx-cursor: hand;
+}
+#Sinscrire, #seConnecter1, #Adherent, #Coachs{
+    -fx-border-width: 0 0 4 0;
+    -fx-border-color: white white #10A1FB white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-font-size: 20;
+    -fx-font-weight: 800;
+}
+.buttons:hover{
+    -fx-background-color: rgba(169,169,169, 0.6), white , white;
+    -fx-border-width: 0 0 2 0;
+    -fx-border-color: white white #10A1FB white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-cursor: hand;
+}
+.inputs{
+    -fx-font-family: "Cambria Math";
+    -fx-font-size: 17;
+    -fx-background-color: #E9E8F9, white, white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+    -fx-border-width: 0;
+    -fx-border-color: white;
+}
+.inputs:focused {
+    -fx-background-color: rgba(169,169,169, 0.6), white , white;
+    -fx-border-width: 0 0 2 0;
+    -fx-padding: 8;
+    -fx-border-color: white white #10A1FB white;
+    -fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;
+}
+.chercher {
+    -fx-border-radius: 40;
+    -fx-background-radius: 40;
+    -fx-border-width: 1 1 1 1;
+    -fx-border-color:  Black;
+}
+.chercher:focused{
+    -fx-border-radius: 40;
+    -fx-background-radius: 40;
+    -fx-border-width: 1 1 1 1;
+    -fx-border-color:  #10A1FB;
+}
+.boxs{
+    -fx-border-color: #49a3ff;
+    -fx-border-width: 3;
+    -fx-border-radius: 40;
+}
+.boxs:hover{
+    -fx-border-color: #004cdf;
+    -fx-border-width: 4;
+    -fx-border-radius: 40;
+    -fx-translate-y: 5 ;
+}

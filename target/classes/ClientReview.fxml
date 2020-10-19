@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ClientReviewController">
+    <children>
+        <ImageView fx:id="Close" fitHeight="34.0" fitWidth="35.0" layoutX="1144.0" layoutY="10.0" onMouseClicked="#Close">
+            <image>
+                <Image url="@Assets/cancel.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="Minus" fitHeight="34.0" fitWidth="35.0" layoutX="1087.0" layoutY="10.0" onMouseClicked="#Minus">
+            <image>
+                <Image url="@Assets/minus.png" />
+            </image>
+        </ImageView>
+        <Button fx:id="reviewBtn" layoutX="517.0" layoutY="509.0" mnemonicParsing="false" onAction="#ReviewAction" prefHeight="40.0" prefWidth="185.0" styleClass="retour" text="Notez" />
+        <Button fx:id="annulerBtn" layoutX="53.0" layoutY="28.0" mnemonicParsing="false" onAction="#ReturnAction" prefHeight="38.0" prefWidth="82.0" styleClass="retour" text="Annuler" />
+        <Text layoutX="248.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Vous évaluez le coach" wrappingWidth="468.2666931152344">
+            <font>
+                <Font name="Century" size="43.0" />
+            </font>
+        </Text>
+        <ChoiceBox fx:id="choiceRank" layoutX="468.0" layoutY="184.0" prefHeight="38.0" prefWidth="276.0" />
+      <Text fx:id="coachName" layoutX="659.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mounib" wrappingWidth="468.2666931152344">
+         <font>
+            <Font name="Century" size="43.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="reviewText" layoutX="325.0" layoutY="265.0" prefHeight="200.0" prefWidth="569.0" />
+      <Label fx:id="doneText" layoutX="253.0" layoutY="335.0" text="Evalutation prise en compte, Merci.">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
