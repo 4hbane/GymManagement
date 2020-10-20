@@ -1,4 +1,9 @@
 # Gym Management Application
 
-Made by a group of students at the National School of Applied Sciences ( ENSA Marrakech ); 
-Tools : Java and JavaFX
+Made by :
+- AHBANE Abdellah
+- El Boujbaoui Mounib
+- Outaleb Mounib
+W're students at the National School of Applied Sciences ( ENSA Marrakech ).
+
+*Tools* : Java and JavaFX
